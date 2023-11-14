@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<launch>
+	<node name="inference_hardnet" pkg="inference_hardnet" type="inference_hardnet" output="screen">
+		<param name="imgTopic" value="/blackfly_s/image_color/compressed" />
+		<param name="modelWeightName" value="$(find inference_hardnet)/data/hardnet_outdoor.pt" />
+	</node>
+</launch>
